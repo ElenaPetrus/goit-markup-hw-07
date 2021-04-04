@@ -351,7 +351,7 @@ margin-top: -30px;
 .doing-list__wrapper{
     position: relative;
 }
-.doing-list__item-over{
+.doing-list__overlay{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -864,17 +864,16 @@ margin-top: 9px;
 /*====================END MODAL WINDOW=======================*/
 
 /*====================PROJECT SELECTOR========================*/ 
-.selector-list{
+.filtre__list{
     display: flex;
     justify-content: center;
-}
-.projects__selector-list{
     margin-bottom: 50px;
 }
-.selector-list__item:not(:last-child){
+
+.filtre__item:not(:last-child){
     margin-right: 8px;  
 }
-.selector-list__btn {
+.filtre__btn {
     transition: background-color 250ms var(--cubic), color 250ms var(--cubic),
     box-shadow 250ms var(--cubic);
     
@@ -892,28 +891,28 @@ margin-top: 9px;
     cursor: pointer;
 }
 
-.selector-list__btn:hover,
-.selector-list__btn:focus {
+.filtre___btn:hover,
+.filtre__btn:focus {
     color: var(--contrast-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.selector-list__btn--first{
+.filtre__btn--first{
     min-width: 73px;
 }
-.selector-list__btn--second{
+.filtre__btn--second{
     min-width: 128px;
 }
-.selector-list__btn--third{
+.filtre__btn--third{
     min-width: 145px;
 }
-.selector-list__btn--fourth{
+.filtre__btn--fourth{
     min-width: 103px;
 }
-.selector-list__btn--fifth{
+.filtre__btn--fifth{
   min-width: 130px;  
 }
-.projects__container{
+.filtre__container{
         padding-top: var(--section-top);
         padding-bottom: var(--section-btm);
     
@@ -921,31 +920,32 @@ margin-top: 9px;
 /*====================END PROJECT SELECTOR===========================*/
 
 /*====================PROJECT EXAMPLES===========================*/
-.project-list{
+.projects{
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
     align-items: center;
-    /*margin-left: -30px;
-    margin-top: -30px;*/
-
 }
-.project-item{
+.projects__list{
+    margin: -15px;
+      /*margin-left: -30px;
+    margin-top: -30px;*/
+}
+.projects__item{
     flex-basis: calc(100% / 3 - 30px);
     /*margin-left: 30px;
     margin-top: 30px;*/
     margin: 15px;
 }
-.project-link{
+.projects__link{
     display:block;
 
     transition: box-shadow 250ms var(--cubic);
 }
-.project-link:hover,
-.project-link:focus{
+.projects__link:hover,
+.projects__link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project-name {
+.projects__name {
     font-family: var(--main-font);
     font-weight: bold;
     font-size: 18px;
@@ -955,7 +955,7 @@ margin-top: 9px;
     color: var(--main-color);
     margin-bottom: 4px; 
 }
-.project-type {
+.projects__type {
     font-family: var(--main-color);
     font-weight: normal;
     font-size: 16px;
@@ -964,22 +964,22 @@ margin-top: 9px;
 
     color: var(--secondary-collor);
 }
-.project-description{
+.projects__description{
     padding: 20px 24px;
     border: 1px solid var(--project-border-color);
     border-top: none;
 }
 
-.project-link:hover .over-project,
-.project-link:focus .over-project{
+.projects__link:hover .projects__overlay,
+.projects__link:focus .projects__overlay{
     transform: translateY(0);
 
 }
-.project-wrapper{
+.projects__wrapper{
     position: relative;
     overflow: hidden;
 }
-.over-project{
+.projects__overlay{
     position: absolute;
     top: 0;
     left: 0;
