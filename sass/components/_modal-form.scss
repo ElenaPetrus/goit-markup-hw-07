@@ -2,30 +2,49 @@
 .modal-form {
     display: flex;
     flex-direction: column;
+
+    &__user-data {
+        display: block;
+        margin-bottom: 12px;
+        font-family: var(--main-font);
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+        color: var(--main-color);
+      }
+      &__field {
+        font-family: var(--main-font);
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: var(--secondary-collor);
+      }
+      &__input-wrapper {
+        position: relative;
+        margin-top: 4px;
+        margin-bottom: 10px;
+      }
+      
+    &__btn{
+        align-self: center;
+        min-width: 200px;
+        padding: 10px 56px;
+        background:var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+
+        font-family: var(--main-font);
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        color:var(--contrast-color);
+    }
   }
-  .modal-form__user-data {
-    display: block;
-    margin-bottom: 12px;
-    font-family: var(--main-font);
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-  }
-  .modal-form__field {
-    font-family: var(--main-font);
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: var(--secondary-collor);
-  }
-  .modal-form__input-wrapper {
-    position: relative;
-    margin-top: 4px;
-    margin-bottom: 10px;
-  }
+ 
   .modal-form__icon {
     position: absolute;
     top: 50%;
@@ -82,23 +101,6 @@
         outline: none;
         border: 1px solid var(--accent-color);
     }
-}
-
-.modal-form__btn{
-    align-self: center;
-    min-width: 200px;
-    padding: 10px 56px;
-    background:var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-
-    font-family: var(--main-font);
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color:var(--contrast-color);
 }
 .checkbox-wrapper__check{
     display: flex;

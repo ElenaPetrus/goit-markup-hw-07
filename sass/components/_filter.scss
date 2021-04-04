@@ -4,8 +4,10 @@
     margin-bottom: 50px;
 }
 
-.filtre__item:not(:last-child){
-    margin-right: 8px;  
+.filtre__item{
+    &:not(:last-child){
+        margin-right: 8px;  
+    }
 }
 .filtre__btn {
     transition: background-color 250ms var(--cubic), color 250ms var(--cubic),
@@ -30,25 +32,22 @@
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
+
+    &--first{
+        min-width: 73px;
+    }
+    &--second{
+        min-width: 128px;
+    }
+    &--third{
+        min-width: 145px;
+    }
+    &--fourth{
+        min-width: 103px;
+    }
+    &--fifth{
+      min-width: 130px;  
+    }
 }
 
-.filtre__btn--first{
-    min-width: 73px;
-}
-.filtre__btn--second{
-    min-width: 128px;
-}
-.filtre__btn--third{
-    min-width: 145px;
-}
-.filtre__btn--fourth{
-    min-width: 103px;
-}
-.filtre__btn--fifth{
-  min-width: 130px;  
-}
-.filtre__container{
-    padding-top: var(--section-top);
-    padding-bottom: var(--section-btm);
-    
-    }
+

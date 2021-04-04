@@ -2,30 +2,13 @@
     margin: 0 auto;
     background-color:var(--footer-color);
 }
-.footer__container {
-    display: flex;
-    align-items: baseline;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 .contact{
     min-width: 231px;
 }
 .footer__contact{
     margin-right: 70px;
 }
-.footer__logo{
-    display: inline-block;
-    margin-bottom: 20px;
-}
-.logo__part2--light {
-    font-family: var(--secondary-font);
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--contrast-color);
-}
+
 .address-list__link--postal {
 font-weight: normal;
 font-size: 14px;
@@ -50,65 +33,68 @@ margin-top: 9px;
 }
 .join-networks {
     min-width: 206px;
+
+    &__text {
+        display: block;
+        margin-bottom: 20px;
+        font-family:var(--main-font);
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        
+        color: var(--contrast-color);
+    }
 }
 .footer__join-networks{
     margin-right: 93px;
 }
-.join-networks__text {
-    display: block;
-    margin-bottom: 20px;
-    font-family:var(--main-font);
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    
-    color: var(--contrast-color);
-}
-
 
 .signup{
     min-width: 570px;
-}
-.signup__text{
-    display: block;
-    margin-bottom: 20px;
-    font-family: var(--main-font);
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--contrast-color);
 
+    &__text{
+        display: block;
+        margin-bottom: 20px;
+        font-family: var(--main-font);
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--contrast-color);
+    
+    }
 }
 .sign-form{
     display: flex;
     justify-content: space-between;
-}
-.sign-form__btn{
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    min-width: 200px;
-    padding: 10px 28px;
 
-    background:var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-     
-    font-family:var(--main-font);
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--contrast-color);
+    &__btn{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 200px;
+        padding: 10px 28px;
+    
+        background:var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+         
+        font-family:var(--main-font);
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        color: var(--contrast-color);
+    }
+    &__icon{
+        fill: var(--contrast-color);
+    }
 }
-.sign-form__icon{
-    fill: var(--contrast-color);
-}
+
 .sign-form__input{
     width: 358px;
     height: 50px;
@@ -127,8 +113,7 @@ margin-top: 9px;
     }
     &::placeholder{
         font-family: Roboto;
-        font-weight: normal;
-        font-size: 16px;
+        @include font(normal, 16px);
         line-height: 1,25;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);

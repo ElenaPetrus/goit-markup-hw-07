@@ -1,28 +1,17 @@
-.clients__container{
-    padding-top: var(--section-btm);
-    padding-bottom: 88px;
-    
-}
 .client-list{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;   
+    @extend %flex-container;
+    
+    &__item {
+        @extend %center-position;
+        flex-basis: calc(100% /6 - 30px);
+        margin: 15px;
+    }
 }
 .clients__client-list{
     margin: -15px;
 }
-
-.client-list__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: calc(100% /6 - 30px);
-    margin: 15px;
-}
 .client-list__site-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %center-position;
 
     transition: border 250ms var(--cubic);
 
