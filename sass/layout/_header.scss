@@ -1,8 +1,14 @@
 .header{
     border-bottom: 1px solid var(--header-line-color);
 }
-.navigation,
-.menu-list,
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.menu-list{
+    display: flex;
+    align-items: center;
+}
 .contact-list{
     display: flex;
     align-items: center;
@@ -64,8 +70,7 @@
 
     transition: color 250ms var(--cubic);
 
-    font-weight: 500;
-    font-size: 14px;
+    @include font(500);
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-collor); 
@@ -107,11 +112,7 @@
     animation-iteration-count: 2;
     }
 }
-.contact-list__icon--mail {
-    margin-right: 10px;
-    fill: currentColor;
-}
-.contact-list__icon--tel{
+.contact-list__icon {
     margin-right: 10px;
     fill: currentColor;
 }
