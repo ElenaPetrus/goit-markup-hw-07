@@ -1,9 +1,9 @@
-.social-link-list{
+.social-list{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.social-link-list__link{
+.social-list__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,16 +22,16 @@
 
    
 }
-.social-link-list__icon{
+.social-list__icon{
    transition: fill 250ms var(--cubic);
 
-   .social-link-list__link:hover &,
-    .social-link-list__link:focus & {
+   .social-list__link:hover &,
+    .social-list__link:focus & {
     fill: var(--contrast-color);
     }
 }
 
-.social-link-list__link--dark{
+.social-list__link--dark{
     display: flex;
     justify-content: center;
     align-items: center;
