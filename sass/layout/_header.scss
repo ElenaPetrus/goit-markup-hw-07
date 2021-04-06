@@ -12,11 +12,9 @@
 .contact-list{
     display: flex;
     align-items: center;
-}
-
-.header__contact-list{
     margin-left: auto;
 }
+  
 .menu-list__item {
  position:relative;
 
@@ -62,7 +60,7 @@
         margin-right: 50px;
     }
 }
-.contact-list__link--mail {
+.contact-list__link {
     display: flex;
     align-items: center;
     padding-top: 24px;
@@ -87,24 +85,8 @@
     }
     
 }
-.contact-list__link--tel {
-    display: flex;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    transition: color 250ms var(--cubic);
+.contact-list__link--anime2{
     
-    @include font(500);
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--secondary-collor);
-
-    &:hover,
-    &:focus {
-    color: var(--accent-color);
-    }
-
     .contact-list__item:hover &,
     .contact-list__item:focus &{
     animation-name: heartBeat;
